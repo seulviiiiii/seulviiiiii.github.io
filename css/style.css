@@ -1,49 +1,61 @@
-@charset "utf-8";
-
-/* ************************************************************************************************************************************************************
-						《 Layout Default Reset 》
-************************************************************************************************************************************************************ */
-
-html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-abbr,address,big,cite,code,del,dfn,font,figure,figcaption,img,ins,q,s,samp,small,strike,sub,sup,tt,var,
-b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,button,input,textarea,select {font-family: 'Noto Sans KR', sans-serif; color:#111111;margin:0;padding:0;}
-html[lang="zn"] * {
-    font-family: 'Noto Sans SC', sans-serif;
-}
-html[lang="ja"] * {
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-button,input,textarea {-webkit-text-size-adjust:none;-webkit-appearance:none;-webkit-border-radius:0;border:none;border-radius:0;margin:0;padding:0;}
-button {background:none;border:none;color:inherit;cursor:pointer;}
-button:disabled {cursor:default;}
-table {border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%;}
-select {background-color:transparent;border:none;letter-spacing:inherit;appearance:none;-webkit-appearance:none;-moz-appearance:none;-webkit-font-smoothing:antialiased;border:none;border-radius:0;margin:0;padding:0;}
-select::-ms-expand {display:none; /* 화살표 없애기 for IE10, 11 */}
-address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;}
-ul,li,ol {list-style-type:none;}
-hr {display:none;}
-legend,caption {overflow:hidden;visibility:hidden;position:absolute;font-size:0;line-height:0;height:0;z-index:-1;}
-a,a:active,input:active,button:active,select:active,label:active,
-a:focus,input:focus,button:focus,select:focus,label:focus {text-decoration:none;outline:none;}
-a,span,em,strong {color:inherit;font:inherit;border:0;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
-a,input,button,select,label {-webkit-tap-highlight-color:transparent;}
-::-webkit-input-placeholder {color:#c7c7c7;font:inherit;line-height:inherit;}
-input:disabled::-webkit-input-placeholder {color:#c7c7c7;}
-:-moz-placeholder {color:#c7c7c7;font:inherit;line-height:inherit;}
-input:disabled:-moz-placeholder {color:#c7c7c7;}
-::-moz-placeholder {color:#c7c7c7;font:inherit;line-height:inherit;}
-input:disabled::-moz-placeholder {color:#c7c7c7;}
-:-ms-input-placeholder {color:#c7c7c7;font:inherit;line-height:inherit;}
-input:disabled:-ms-input-placeholder {color:#c7c7c7;}
-textarea::placeholder {color:#c7c7c7;}
-textarea::-webkit-placeholder {color:#c7c7c7;}
-textarea::-moz-placeholder {color:#c7c7c7;}
-textarea::-ms-placeholder {color:#c7c7c7;}
-.blind {overflow:hidden;font-size:0;line-height:0;position:absolute;height:0;width:0;}
-.num {font-family:'GmarketSans'; font-weight:600;}
-.location .wrap_btn_zoom,
-.location .wrap_controllers,
-.location .cont  {display:none;}
-.location .roughmap_maker_label {top:-56px !important;}
-.location .roughmap_maker_label .roughmap_lebel_text {font-size:16px; padding:8px 16px; font-weight:400; color:#111;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .container {
+    max-width: 500px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #444;
+  }
+  
