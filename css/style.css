@@ -1,61 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Pretendard', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    padding: 0 1rem;
-  }
-  
-  .container {
-    max-width: 500px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #111;
-  }
-  
-  .name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .desc {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #555;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .btn {
-    padding: 0.6rem 1.2rem;
-    background-color: #000;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #444;
-  }
-  
+@charset "utf-8";
+/* ************************************************************************************************************************************************************
+《 Layout 》
+************************************************************************************************************************************************************ */
+
+
+/*
+[z-index 위계]
+#메인 하단 실시간 예약 이미지 : 9999
+#팝업 : 9998
+#PC헤더 : 996
+#PC헤더 서브메뉴 : 998
+#PC헤더 상단 드롭다운 : 999
+#퀵메뉴 : 995
+*/
+
+/* 헤더 */
+#header {position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; z-index:996; max-width:1800px;}
+#header nav {max-width:1240px;}
+#header nav ul {display:flex; justify-content:end;}
