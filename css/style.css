@@ -14,7 +14,42 @@
 #퀵메뉴 : 995
 */
 
+body {background-color:#2c3e50;}
 /* 헤더 */
-#header {position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; z-index:996; max-width:1800px;}
-#header nav {max-width:1240px;}
-#header nav ul {display:flex; justify-content:end;}
+#header {position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; z-index:996; transition:background-color 0.3s ease, color 0.3s ease;}
+#header.scrolled { background:#fff;}
+#header.scrolled nav ul a {color:#000;}
+#header nav {max-width:1240px; margin:0 auto; padding:20px 0;}
+#header nav ul {display:flex; justify-content:end; gap:20px;}
+#header nav ul a {font-weight:600; color:#f5f5f5;}
+
+#container {width:1240px; margin:0 auto 160px; padding-top:80px;}
+#container section ~ section {margin-top:40px;}
+
+.tit {font-size:48px; font-weight:600; color:#f5f5f5; margin-bottom:24px;}
+.main {text-align: center;}
+.main .tit {font-size:72px;}
+.main .txt {color:#f5f5f5;}
+.main .txt strong {font-weight:600;}
+
+#projects .box_area {}
+.box_area .box_wrap {border:2px solid #f6ad55; border-radius:8px; color:#fff; display:flex; height:80px; opacity: 0; transform: translateY(20px); transition: all 0.6s ease; padding:20px;}
+.box_area .box_wrap.show {opacity:1; transform:translateY(0);}
+.box_area .box_wrap:hover {background-color:#f5f5f5; color:#000;}
+.box_area .box_wrap:nth-child(even) {flex-direction:row-reverse; text-align:right;}
+.box_area .box_wrap ~ .box_wrap {margin-top:40px;}
+.box_wrap .txt_wrap .name {font-weight:600; font-size:32px; color:#fff;}
+
+
+/* 푸터 */
+#footer {background:#000; text-align:center; padding:20px;}
+#footer p { color:#fff; font-size:14px;}
+
+/* * { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #000; color: #fff; line-height: 1.6; } */
+#container { padding-top: 80px; }
+/* #contents section { max-width: 1240px; margin: 0 auto; padding: 100px 20px; } */
+/* #projects .box_area { display: grid; gap: 40px; margin-top: 40px; } */
+.contact_wrap { display: flex; gap: 10px; justify-content: center; align-items: center; }
+.contact_wrap .email { padding: 10px; border: none; border-radius: 4px; }
+.contact_wrap .git { color: #fff; text-decoration: underline; }
