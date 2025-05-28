@@ -4,40 +4,30 @@
 ************************************************************************************************************************************************************ */
 
 
-/*
-[z-index 위계]
-#메인 하단 실시간 예약 이미지 : 9999
-#팝업 : 9998
-#PC헤더 : 996
-#PC헤더 서브메뉴 : 998
-#PC헤더 상단 드롭다운 : 999
-#퀵메뉴 : 995
-*/
-
-body {background-color:#2c3e50;}
 /* 헤더 */
-#header {position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; z-index:996; transition:background-color 0.3s ease, color 0.3s ease;}
-#header.scrolled { background:#fff;}
+#header {background-color:#dcdcdc; position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; z-index:996; transition:background-color 0.3s ease, color 0.3s ease;}
+#header.scrolled { background:#f5f5f5; opacity:25%;}
 #header.scrolled nav ul a {color:#000;}
 #header nav {max-width:1240px; margin:0 auto; padding:20px 0;}
 #header nav ul {display:flex; justify-content:end; gap:20px;}
-#header nav ul a {font-weight:600; color:#f5f5f5;}
+#header nav ul a {font-weight:600; color:#4a90e2     ;}
 
 #container {width:1240px; margin:0 auto 160px; padding-top:80px;}
 #container section ~ section {margin-top:40px;}
 
-.tit {font-size:48px; font-weight:600; color:#f5f5f5; margin-bottom:24px;}
 .main {text-align: center;}
 .main .tit {font-size:72px;}
-.main .txt {color:#f5f5f5;}
+.main .txt {color:#dcdcdc;}
 .main .txt strong {font-weight:600;}
 
+#projects .tit {font-size:48px; font-weight:600; margin-bottom:24px;}
 #projects .box_area {}
 .box_area .box_wrap {border:2px solid #f6ad55; border-radius:8px; color:#fff; display:flex; height:80px; opacity: 0; transform: translateY(20px); transition: all 0.6s ease; padding:20px;}
 .box_area .box_wrap.show {opacity:1; transform:translateY(0);}
 .box_area .box_wrap:hover {background-color:#f5f5f5; color:#000;}
 .box_area .box_wrap:nth-child(even) {flex-direction:row-reverse; text-align:right;}
-.box_area .box_wrap ~ .box_wrap {margin-top:40px;}
+.box_area .box_wrap
+~ .box_wrap {margin-top:40px;}
 .box_wrap .txt_wrap .name {font-weight:600; font-size:32px; color:#fff;}
 
 
